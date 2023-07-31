@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="content-date">
+                <div class="date">
+                    <div class="day">
+                        <p><label for="day" class="lblDay">Day</label></p>
+                        <input type="text" name="day" id="day" placeholder="DD">
+                        <br /><i class="error msgErrorDay"></i>
+                    </div>
+                    <div class="month">
+                        <p><label for="month" class="lblMonth">Month</label></p>
+                        <input type="text" name="day" id="month" placeholder="MM">
+                        <br /><i class="error msgErrorMonth"></i>
+                    </div>
+                    <div class="year">
+                        <p><label for="year" class="lblYear">Year</label></p>
+                        <input type="text" name="day" id="year" placeholder="YYYY">
+                        <br /><i class="error msgErrorYear"></i>
+                    </div>
+                    <div class="icon">
+                        <img src="icon-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results">
+                <div class="resultTag">
+                    <span class="result resultYears">- -</span>
+                    <span class="titleResult">years</span>
+                </div>
+                <div class="resultTag">
+                    <span class="result resultMoths">- -</span>
+                    <span class="titleResult">months</span>
+                </div>
+                <div class="resultTag">
+                    <span class="result resultDay">- -</span>
+                    <span class="titleResult">days</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

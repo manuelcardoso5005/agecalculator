@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background: hsl(0, 0%, 86%);
+    min-width: 375px;
+    max-width: 1440px;
+    font-size: 32px;                                                                                                          
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background:hsl(0, 0%, 100%);
+    position: relative;
+    width: 700px;
+    padding: 20px 40px;
+    border-radius: 20px 20px 30% 20px;
+}
+
+.container label {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+input {
+    border: 1px solid hsl(0, 0%, 86%);
+    padding: 10px 20px;
+    font-size: 32px;
+    border-radius: 8px;
+    width: 150px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: hsl(0, 0%, 8%);
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: hsl(0, 100%, 67%);
+    font-size: 12px;
+    position: relative;
+}
+
+.icon {
+    background: hsl(259, 100%, 65%);
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.content-date {
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding: 20px 0 35px 0;
+}
+
+.results {
+    padding: 20px 0;
+    font-size: 80px;
+    font-weight:bolder;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+.result {
+    color: hsl(259, 100%, 65%);
+}
+
+.resultTag {
+    margin-top: -30px;
+}
+
+.titleResult {
+    color: hsl(0, 0%, 8%);
+}
+
+@media screen and (max-width:800px) {
+
+    .container {
+        position: relative;
+        width: 355px;
+        padding: 20px;
+        border-radius: 20px 20px 30% 20px;
+    }
+
+    .date {
+        width: 100%;
+        color: hsl(0, 100%, 67%);
+        font-size: 12px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 8px;
+        width:95px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    
+    .results {
+        padding: 20px 0;
+        font-size: 40px;
+        margin-top: 35px;
+    }
+
+    .resultTag {
+        margin-top: -10px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        right: 130px;
+        bottom: -94px;
+    }
+
+    .icon img {
+        width: 26px;
+    }
+            
+    .error {
+        font-size: 10px;
+        position: absolute;
+    }
+
+    .content-date {
+        padding: 20px 0 65px 0;
+    }
+}
+
+@media screen and (min-width:800px) {
+        
+    .error {
+        position: absolute;
+    }
+
+    .icon {
+        right: -140px;
+        bottom: -80px;
+    }
+}
